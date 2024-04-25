@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <meta name="autho" content="Marina Torres">
+    <meta name="keywords" content="Listas,HTML,Formato">
+    <!-- Favicon,icono de la pestaña del navegador -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <style>
+    #menu{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+    }
+    #menu li{
+        float: left;
+    }
+    #menu li a{
+        display: block;
+        color: aliceblue;
+        text-align: center;
+        text-decoration: none;
+        padding: 15px;
+    }
+    #menu li a:hover{
+        color: rgb(255, 0, 157);
+    }
+    </style>
+    
+</head>
+<body>
+    <!-- Listas ordenadas -->
+    <ol>
+    <li>Uno</li>
+    <li>Dos</li>
+    <li>Tres</li>
+    <li>Cuatro</li>
+    <li>Cinco</li>
+    <li>Seis</li>
+    </ol>
+    <!-- Lista sin ordenar  -->
+    <ul>
+    <li>Uno</li>
+    <li>Dos</li>
+    <li>Tres</li>
+    <li>Cuatro</li>
+    <li>Cinco</li>
+    <li>Seis</li>
+    </ul>
+    <!-- Listas de descripciones o definiciones  -->
+    <dl>
+        <dt>HTML</dt> <!--Termino-->
+        <dd>Lenguaje para desarrollar páginas web</dd> <!--Definicion-->
+
+        <dt>CSS</dt>
+        <dd>Lenguaje de estilos para las páginas web</dd>
+    </dl>
+    <!-- Estilos en lista desordenada -->
+    <!-- Sin estilo -->
+    <ul style="list-style: none;">
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+        <li>Cuatro</li>
+        <li>Cinco</li>
+        <li>Seis</li>
+    </ul>
+    <!-- Con un circulo -->
+    <ul style="list-style: circle;">
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+        <li>Cuatro</li>
+        <li>Cinco</li>
+        <li>Seis</li>
+    </ul>
+    <!-- Con un cuadrado -->
+    <ul style="list-style: square;">
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+        <li>Cuatro</li>
+        <li>Cinco</li>
+        <li>Seis</li>
+    </ul>
+    <!-- Tipo menu -->
+    <ul style="list-style: none;" id="menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Sobre nosotros</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Tienda</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+
+    <!-- Variaciones de las listas ordenadas -->
+    <!-- Listas con letras en mayuscula -->
+    <ol type="A">
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+        <li>Cuatro</li>
+        <li>Cinco</li>
+        <li>Seis</li>
+        </ol>
+    <!-- Listas con letras en minuscula -->
+    <ol type="a">
+    <li>Uno</li>
+    <li>Dos</li>
+    <li>Tres</li>
+    <li>Cuatro</li>
+    <li>Cinco</li>
+    <li>Seis</li>
+    </ol>
+    <!-- Listas en numeros romanos (mayúsculas) -->
+    <ol type="I">
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+        <li>Cuatro</li>
+        <li>Cinco</li>
+        <li>Seis</li>
+    </ol>
+    <!-- Listas en numeros romanos (minuscula) -->
+    <ol type="i">
+    <li>Uno</li>
+    <li>Dos</li>
+    <li>Tres</li>
+    <li>Cuatro</li>
+    <li>Cinco</li>
+    <li>Seis</li>
+    </ol>
+
+    <!-- Listas encadenadas/anidadas -->
+    <ol>
+        <li>Capítulo I</li>
+        <ol type="i">
+            <li>El rescate</li>
+            <li>La huida</li>
+            <li>La carcel</li>
+            <li>El destierro</li>
+        </ol>
+        <li>Capítulo II</li>
+        <li>Capítulo III</li>
+    </ol>
+    <!-- Lista anidada no ordenada -->
+    <ul>
+        <li>Capitulo I</li>
+        <ul>
+            <li>El rescate</li>
+                <ul>
+                    <li>Otros</li>
+                    <li>Varios</li>
+                </ul>
+            <li>La <span style="color: blueviolet;font-family: 'Courier New', Courier, monospace;">huida</span></li>
+            <li>La carcel</li>
+            <li>El destierro</li>
+        </ul>
+    </ul>
+    <!-- Otras variaciones -->
+    <ol start="5" reversed type="I" style="margin: auto; width: 20%;">
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+        <li>Cuatro</li>
+        <li>Cinco</li>
+        </ol>
+    
+
+
+
+</body>
+</html>

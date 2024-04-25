@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div en HTML</title>
+    <meta name="autho" content="Marina Torres">
+    <meta name="keywords" content="Div,HTML,Formato">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <style>
+        #div1 {
+            background-color: rgb(111, 197, 255);
+            width: 350px;
+            height: 250px;
+            border-radius: 20px;
+
+        }
+
+        #div1 p {
+            padding: 20px;
+            color: rgb(243, 255, 255);
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        #div2 {
+            background-color: rgb(193, 133, 250);
+            padding: 20px;
+            height: 300px;
+            width: 250px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-radius: 20px;
+        }
+
+        #div2 p,
+        li,
+        h1 {
+            color: white;
+        }
+
+        #div3,
+        #div4,
+        #div5 {
+            width: 60%;
+            margin: auto;
+            padding: 10px;
+        }
+
+        #div3,
+        #div6,#div9 {
+            background-color: rgb(253, 200, 101);
+        }
+
+        #div4,
+        #div7,#div10 {
+            background-color: rgb(255, 247, 139);
+        }
+
+        #div5,
+        #div8,#div11 {
+            background-color: rgb(144, 250, 118);
+        }
+
+        #div6,
+        #div7,
+        #div8 {
+            width: 25%;
+            margin: 10px;
+            float: left;
+            padding: 10px;
+        }
+
+        #contenedor1 {
+            width: 70%;
+            margin: auto;
+        }
+        #div9,#div10,#div11{
+            clear: left;
+            width: 25%;
+            padding: 10px;
+            display: inline-block;
+        }
+        #div12{
+            width: 10%;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Un div es un contenedor que puede tener otros elementos o etiquetas
+    dentro -->
+    <div id="div1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet assumenda blanditiis, quasi aperiam delectus
+            quis ipsam.</p>
+        
+        <p id="parrafo2">
+        <a href="#div11"><img src="img/felcha abajo.png" alt="Abajo"></a>
+        </p>
+    </div>
+    <!-- Ejemplo loco: un div dentro de un párrafo -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    <div>Soluta blanditiis modi reprehenderit aperiam vel ex iure ipsum itaque voluptatum officiis consequatur quam,
+        molestiae dignissimos tenetur, molestias asperiores exercitationem nostrum. Quaerat?</div>
+    </p>
+    <!-- Div con varios elementos -->
+    <div id="div2">
+        <h1>El título</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum architecto alias soluta repudiandae eligendi
+            tenetur, nihil ex! Voluptatem a atque, corporis facilis quis numquam, nobis placeat consequuntur nulla ipsum
+            perspiciatis?</p>
+        <ul>
+            <li>Uno</li>
+            <li>Dos</li>
+            <li>Tres</li>
+        </ul>
+    </div>
+    <!-- Multiples Div -->
+    <h1>Múltiples DIV</h1>
+    <div id="div3">
+        <h2>Londres</h2>
+        <p>Capital de Inglaterra</p>
+        <p>Tiene 15 millones de habitantes</p>
+
+    </div>
+    <div id="div4">
+        <h2>Roma</h2>
+        <p>Capital de Italia</p>
+        <p>Tiene 4 millones de habitantes</p>
+
+    </div>
+    <div id="div5">
+        <h2>Madrid</h2>
+        <p>Capital de España</p>
+        <p>Tiene 3 millones de habitantes</p>
+
+    </div>
+
+    <h2>Múltiples cajas una al lado de la otra</h2>
+    <div id="contenedor1">
+        <div id="div6">
+            <h2>Londres</h2>
+            <p>Capital de Inglaterra</p>
+            <p>Tiene 15 millones de habitantes</p>
+
+        </div>
+        <div id="div7">
+            <h2>Roma</h2>
+            <p>Capital de Italia</p>
+            <p>Tiene 4 millones de habitantes</p>
+
+        </div>
+        <div id="div8">
+            <h2>Madrid</h2>
+            <p>Capital de España</p>
+            <p>Tiene 3 millones de habitantes</p>
+
+        </div>
+    </div>
+ 
+    <!-- Otra forma de colocar los div uno al lado del otro -->
+    <div id="div9">
+        <h2>Londres</h2>
+        <p>Capital de Inglaterra</p>
+        <p>Tiene 15 millones de habitantes</p>
+
+    </div>
+    <div id="div10">
+        <h2>Roma</h2>
+        <p>Capital de Italia</p>
+        <p>Tiene 4 millones de habitantes</p>
+
+    </div>
+    <div id="div11">
+        <h2>Madrid</h2>
+        <p>Capital de España</p>
+        <p>Tiene 3 millones de habitantes</p>
+    </div>
+    <div id="div12">
+            <a href="#div1"><img src="img/flecha arriba.png" alt="arriba"></a>
+        </div>
+    
+</body>
+
+</html>
